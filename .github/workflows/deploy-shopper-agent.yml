@@ -1,0 +1,40 @@
+name: Deploy Shopper Agent
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/app/agents/shopperAgent_initializer.py'
+      - 'src/app/tools/aiSearch.py'
+      - 'src/prompts/ShopperAgentPrompt.txt'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Create .env file
+        run: echo "${{ secrets.ENV }}" > src/.env
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install -r src/requirements.txt
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Deploy Shopper Agent
+        run: |
+          cd src/app/agents
+          python shopperAgent_initializer.py
