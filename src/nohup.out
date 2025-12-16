@@ -1,0 +1,81 @@
+INFO:azure.core.pipeline.policies.http_logging_policy:Request URL: 'https://westeurope-5.in.applicationinsights.azure.com//v2.1/track'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '1387'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'c60edf2e-da28-11f0-8bd0-7ced8db1649b'
+    'User-Agent': 'azsdk-python-azuremonitorclient/unknown Python/3.12.1 (Linux-6.8.0-1030-azure-x86_64-with-glibc2.31)'
+A body is sent with the request
+INFO:azure.core.pipeline.policies.http_logging_policy:Response status: 439
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Date': 'Tue, 16 Dec 2025 02:41:50 GMT'
+INFO:__main__:✓ Application Insights telemetry enabled
+INFO:     Started server process [29718]
+INFO:     Waiting for application startup.
+INFO:__main__:Starting Zava Product Manager with A2A integration...
+INFO:agent.a2a_server:A2A server configured for 0.0.0.0:8001
+INFO:__main__:A2A server mounted at / - Agent Card available at http://0.0.0.0:8001/agent-card/
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8001): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:Shutting down Zava Product Manager...
+INFO:     Application shutdown complete.
+INFO:azure.core.pipeline.policies.http_logging_policy:Request URL: 'https://swedencentral-0.in.applicationinsights.azure.com//v2.1/track'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '5452'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'c6c6d692-da28-11f0-8e36-7ced8db1649b'
+    'User-Agent': 'azsdk-python-azuremonitorclient/unknown Python/3.12.1 (Linux-6.8.0-1030-azure-x86_64-with-glibc2.31)'
+A body is sent with the request
+INFO:azure.core.pipeline.policies.http_logging_policy:Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Date': 'Tue, 16 Dec 2025 02:41:52 GMT'
+INFO:azure.monitor.opentelemetry.exporter.export._base:Transmission succeeded: Item received: 8. Items accepted: 8
+INFO:azure.core.pipeline.policies.http_logging_policy:Request URL: 'https://swedencentral-0.in.applicationinsights.azure.com//v2.1/track'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '8062'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'c76c3dee-da28-11f0-abee-7ced8db1649b'
+    'User-Agent': 'azsdk-python-azuremonitorclient/unknown Python/3.12.1 (Linux-6.8.0-1030-azure-x86_64-with-glibc2.31)'
+A body is sent with the request
+INFO:azure.core.pipeline.policies.http_logging_policy:Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Date': 'Tue, 16 Dec 2025 02:41:53 GMT'
+INFO:azure.monitor.opentelemetry.exporter.export._base:Transmission succeeded: Item received: 8. Items accepted: 8
+INFO:azure.core.pipeline.policies.http_logging_policy:Request URL: 'https://westeurope-5.in.applicationinsights.azure.com//v2.1/track'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '1429'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'c81332ca-da28-11f0-abd4-7ced8db1649b'
+    'User-Agent': 'azsdk-python-azuremonitorclient/unknown Python/3.12.1 (Linux-6.8.0-1030-azure-x86_64-with-glibc2.31)'
+A body is sent with the request
+INFO:azure.core.pipeline.policies.http_logging_policy:Response status: 439
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Date': 'Tue, 16 Dec 2025 02:41:54 GMT'

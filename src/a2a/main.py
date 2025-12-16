@@ -9,6 +9,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 from dotenv import load_dotenv
+from azure.monitor.opentelemetry import configure_azure_monitor
 
 from api.chat import router as chat_router
 from agent.a2a_server import A2AServer
@@ -16,9 +17,17 @@ from agent.a2a_server import A2AServer
 # Load environment variables
 load_dotenv()
 
-# Configure logging
+# Configure logging first
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+# Configure Azure Monitor for Application Insights
+application_insights_connection_string = os.environ.get("APPLICATIONINSIGHTS_CONNECTION_STRING")
+if application_insights_connection_string:
+    configure_azure_monitor(connection_string=application_insights_connection_string)
+    logger.info("✓ Application Insights telemetry enabled")
+else:
+    logger.warning("⚠ APPLICATIONINSIGHTS_CONNECTION_STRING not found - telemetry disabled")
 
 # Global variables for cleanup
 httpx_client: httpx.AsyncClient = None
