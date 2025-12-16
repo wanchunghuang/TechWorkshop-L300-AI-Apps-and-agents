@@ -36,5 +36,5 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Deploy Inventory Agent
-        run: python inventoryAgent_initializer.py
-        working-directory: src/app/agents
+        run: python app/agents/inventoryAgent_initializer.py
+        working-directory: src

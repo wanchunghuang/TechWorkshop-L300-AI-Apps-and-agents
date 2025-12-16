@@ -36,5 +36,5 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Deploy Cart Manager Agent
-        run: python cartManagerAgent_initializer.py
-        working-directory: src/app/agents
+        run: python app/agents/cartManagerAgent_initializer.py
+        working-directory: src

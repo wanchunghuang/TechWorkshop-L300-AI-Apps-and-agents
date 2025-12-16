@@ -36,5 +36,5 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Deploy Customer Loyalty Agent
-        run: python customerLoyaltyAgent_initializer.py
-        working-directory: src/app/agents
+        run: python app/agents/customerLoyaltyAgent_initializer.py
+        working-directory: src

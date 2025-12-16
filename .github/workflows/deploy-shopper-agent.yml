@@ -36,5 +36,5 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Deploy Shopper Agent
-        run: python shopperAgent_initializer.py
-        working-directory: src/app/agents
+        run: python app/agents/shopperAgent_initializer.py
+        working-directory: src

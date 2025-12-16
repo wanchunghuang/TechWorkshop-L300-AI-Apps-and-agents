@@ -36,5 +36,5 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Deploy Interior Design Agent
-        run: python interiorDesignAgent_initializer.py
-        working-directory: src/app/agents
+        run: python app/agents/interiorDesignAgent_initializer.py
+        working-directory: src
